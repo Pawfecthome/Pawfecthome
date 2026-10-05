@@ -4,3 +4,10 @@
 @media(max-width:560px){.notice{font-size:.62rem;letter-spacing:.08em}.brand{font-size:1.42rem}.hero-copy{padding:49px 22px 45px}.hero h1{font-size:clamp(3.6rem,15vw,5rem);margin:17px 0}.hero p{font-size:.98rem}.hero-photo{height:300px}.hero-badge{right:14px;bottom:14px;font-size:.9rem;padding:10px 12px}.assurance .wrap{grid-template-columns:1fr;padding:0}.assurance div{padding:11px;font-size:.65rem}.assurance div+div{border-left:0;border-top:1px solid var(--line)}.section-head{align-items:start}.section-head .textlink{margin-top:15px;white-space:nowrap}.section h2{font-size:2.7rem}.categories{gap:9px}.category{min-height:185px}.category span{font-size:1.45rem;padding:14px}.shop-intro{display:block}.shop-intro p{margin-top:14px;font-size:.9rem}.shop-tools{display:block}.filters{margin-bottom:14px}.search{width:100%;max-width:none}.grid{gap:10px}.card-image{height:165px}.card-body{padding:13px}.card h3{font-size:1.15rem;margin:7px 0 13px}.card-bottom{display:block}.small-link{display:inline-block;margin-top:8px}.story-photo{height:310px}.about h2{font-size:3.3rem}.benefits{grid-template-columns:1fr;gap:25px}.footgrid{display:block}.footer nav{margin-top:30px}.detail{padding:10px}.detail-panel img{height:230px}.detail-copy h2{font-size:2rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 .brand-dog{display:block;height:66px;width:auto;flex:none}.footer .brand-dog{height:76px}@media(max-width:850px){.brand-dog{height:53px}}@media(max-width:560px){.brand-dog{height:49px}.brand{gap:6px}}
+
+/* Keep prices and detail links separated on narrow product cards. */
+@media(max-width:560px){
+ .card-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+ .card-bottom .price{display:block;line-height:1.4}
+ .card-bottom .small-link{display:inline-flex;align-items:center;min-height:44px;line-height:1.4;white-space:normal}
+}
