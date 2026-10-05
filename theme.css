@@ -11,3 +11,7 @@
  .card-bottom .price{display:block;line-height:1.4}
  .card-bottom .small-link{display:inline-flex;align-items:center;min-height:44px;line-height:1.4;white-space:normal}
 }
+
+/* Keep category names and arrows on the same line. */
+.category span{white-space:nowrap}
+@media(max-width:560px){.category span{font-size:clamp(1rem,4.6vw,1.45rem);padding:14px 10px}}
