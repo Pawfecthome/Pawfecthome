@@ -15,3 +15,6 @@
 /* Keep category names and arrows on the same line. */
 .category span{white-space:nowrap}
 @media(max-width:560px){.category span{font-size:clamp(1rem,4.6vw,1.45rem);padding:14px 10px}}
+
+/* Five category tiles on desktop; retain two columns on mobile. */
+@media(min-width:851px){.categories{grid-template-columns:repeat(5,minmax(0,1fr))}.category span{font-size:1.5rem;padding:18px 12px}}
